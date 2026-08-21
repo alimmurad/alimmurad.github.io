@@ -92,11 +92,6 @@
       overflow: hidden;
     }
 
-    .draft {
-      opacity: 0.5;
-      outline: 2px dashed var(--accent);
-    }
-
     .work img {
       float: left;
       width: 200px;
@@ -104,6 +99,7 @@
       border-radius: 8px;
       margin: 4px 20px 10px 0;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -126,6 +122,16 @@
       margin: 26px 0;
       padding: 0;
       list-style: none;
+    }
+
+    .release a {
+      display: block;
+      color: inherit;
+    }
+
+    .release a:hover {
+      text-decoration: none;
+      opacity: 0.85;
     }
 
     .release img {
@@ -211,7 +217,7 @@
   <article class="work">
     <h3>Poetry Open Mic at Buddies — a campaign concept</h3>
 
-    <img src="mirror.JPG" alt="A mirror at Buddies in Bad Times Theatre">
+    <img src="mirror.JPG" alt="A mirror at Buddies in Bad Times Theatre covered in handwritten messages in UV-lit marker.">
 
     <p><strong>Context.</strong> An unsolicited concept for the Poetry Open Mic at Buddies in Bad Times Theatre, hosted by Raymond Helkio. Not commissioned — made after attending the series several times, including once as a reader.</p>
 
@@ -220,359 +226,11 @@
     <p><strong>What I made.</strong> Three social posts — one built on my own photograph of the mirror, two typographic pieces designed in Photoshop — and a pre-event email built in Mailchimp, with the photograph as the header, a call to action, and deliberate preview text. Two subject lines written for testing: one curiosity-led, one written to lower the barrier for people who would never read aloud.</p>
 
     <p><strong>The thinking.</strong> One event, two audiences: people who might read, and people who would only ever watch. Every piece gives both a way in. The campaign also names the hardest part out loud — the stage sits at the back, so reading means walking past everyone — because the barrier shrinks once somebody says it.</p>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Murad Alimov — Content &amp; Communications, Toronto</title>
-      <meta name="description" content="Content and communications professional in Toronto. Editorial, press communications, and multi-platform content.">
-      <style>
-        :root {
-          --paper:  #FCF7F3;
-          --card:   #F6EBE4;
-          --ink:    #221E1C;
-          --muted:  #7A6E68;
-          --line:   #E8DDD6;
-          --accent: #B5323A;
-        }
 
-        html { overflow-x: hidden; }
-
-        body {
-          position: relative;
-          background: var(--paper);
-          color: var(--ink);
-          font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-          font-size: 17px;
-          line-height: 1.65;
-          max-width: 760px;
-          margin: 0 auto;
-          padding: 0 24px;
-        }
-
-        img { max-width: 100%; height: auto; }
-
-        .thread {
-          position: absolute;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100vw;
-          height: 100%;
-          z-index: -1;
-          pointer-events: none;
-          fill: none;
-          stroke: var(--accent);
-          stroke-width: 1.5;
-          opacity: 0.45;
-        }
-
-        h1 {
-          font-size: 46px;
-          line-height: 1.1;
-          letter-spacing: -0.02em;
-          margin-bottom: 12px;
-        }
-
-        h2 {
-          font-size: 13px;
-          text-transform: uppercase;
-          letter-spacing: 0.11em;
-          color: var(--muted);
-          margin-bottom: 24px;
-        }
-
-        h3 {
-          font-size: 21px;
-          line-height: 1.3;
-          margin-bottom: 8px;
-        }
-
-        header, section {
-          padding: 48px 0;
-          border-bottom: 1px solid var(--line);
-        }
-
-        footer {
-          padding: 40px 0 64px;
-          color: var(--muted);
-        }
-
-        a {
-          color: var(--accent);
-          text-decoration: none;
-        }
-
-        a:hover { text-decoration: underline; }
-
-        .work {
-          background: var(--card);
-          padding: 24px 26px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          overflow: hidden;
-        }
-
-        .draft {
-          opacity: 0.5;
-          outline: 2px dashed var(--accent);
-        }
-
-        .work img {
-          float: left;
-          width: 200px;
-          height: auto;
-          border-radius: 8px;
-          margin: 4px 20px 10px 0;
-        }
-        .gallery {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-          gap: 12px;
-          margin-top: 22px;
-          clear: both;
-        }
-
-        .gallery img {
-          float: none;
-          width: 100%;
-          margin: 0;
-          border-radius: 6px;
-        }
-
-        .releases {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-          gap: 24px 18px;
-          margin: 26px 0;
-          padding: 0;
-          list-style: none;
-        }
-
-        .release img {
-          display: block;
-          width: 100%;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-          border-radius: 6px;
-          margin-bottom: 10px;
-        }
-
-        .release .name {
-          font-weight: 600;
-          line-height: 1.3;
-        }
-
-        .release .kind {
-          color: var(--muted);
-          font-size: 12px;
-          text-transform: uppercase;
-          letter-spacing: 0.08em;
-          margin-top: 2px;
-        }
-        .release a { display: block; }
-        .release a:hover { text-decoration: none; opacity: 0.85; }
-
-        .social {
-          display: flex;
-          gap: 18px;
-          align-items: center;
-          margin-bottom: 14px;
-        }
-
-        .social a {
-          color: var(--muted);
-          display: inline-flex;
-        }
-
-        .social a:hover { color: var(--accent); }
-
-        .social svg {
-          width: 22px;
-          height: 22px;
-        }
-
-        @media (max-width: 600px) {
-          h1 { font-size: 32px; }
-          header, section { padding: 32px 0; }
-          .work { padding: 20px; }
-          .work img { float: none; width: 100%; max-width: 320px; margin: 0 0 16px; }
-        }
-      </style>
-    </head>
-    <body>
-
-    <svg class="thread" viewBox="0 0 100 1200" preserveAspectRatio="none" aria-hidden="true">
-      <path vector-effect="non-scaling-stroke"
-            d="M50 0 C 95 120, 5 240, 50 360 S 95 600, 50 720 S 5 960, 50 1200" />
-    </svg>
-
-    <header>
-      <h1>Murad Alimov</h1>
-      <p>Content &amp; Communications — Toronto</p>
-      <p>I write the story and build the page it lives on.</p>
-      <p><a href="mailto:murad.m.alimov@gmail.com">murad.m.alimov@gmail.com</a></p>
-    </header>
-
-    <section>
-      <h2>Selected Work</h2>
-
-      <article class="work">
-        <h3>Mura — running a three-format content system across three languages</h3>
-
-        <p><strong>Context.</strong> An independent poetry and visual art project I write, design and publish entirely myself, across Instagram, TikTok and YouTube. No budget, no team, no existing audience.</p>
-
-        <p><strong>What I built.</strong> Three recurring formats: poetry released as music, original cover and campaign artwork made in Photoshop and PicsArt, and character illustrations reimagined through the Mura alter ego. Ten projects went out in 2026 in English, Russian and Chechen — every lyric, asset and edit my own.</p>
-
-        <p><strong>What the data said.</strong> Reviewing a 30-day snapshot of platform insights showed a sharp split by format. Stories drew 83.5% of views and 97.6% of all interactions, almost entirely from existing followers. Reels drew 13.8% of views but only 2.4% of interactions — pulling in strangers without converting them. Feed posts did neither.</p>
-
-        <p><strong>Result.</strong> <strong>4,144 views from 710 unique viewers in 30 days</strong> against a 225-follower base — content reaching roughly three times the audience that follows it. <strong>Half of all reach came from non-followers</strong>, and <strong>321 of 710 viewers visited the profile</strong>, a 45% look-up rate.</p>
-
-        <p><strong>What I'd change next.</strong> Three things the numbers point to. Reels earn discovery but give no reason to respond — they need a prompt or an open question in the caption. Stories hold the engaged audience, so that's where a call to action belongs: 321 profile visits produced only 2 link taps. And audience activity peaks between 9am and 6pm, highest at midday, which is worth testing against current posting times.</p>
-      </article>
-
-      <article class="work">
-        <h3>Poetry Open Mic at Buddies — a campaign concept</h3>
-
-        <img src="mirror.JPG" alt="A mirror at Buddies in Bad Times Theatre">
-
-        <p><strong>Context.</strong> An unsolicited concept for the Poetry Open Mic at Buddies in Bad Times Theatre, hosted by Raymond Helkio. Not commissioned — made after attending the series several times, including once as a reader.</p>
-
-        <p><strong>The insight.</strong> There is a mirror in the venue that people write on in marker and leave for whoever comes next. Someone had written "I'm overstimulated." Underneath, a stranger answered "me too," and a third added "it's gorgeous, keep going." Most event copy sells the lineup. This campaign sells that exchange, because it is the actual reason people come back.</p>
-
-        <p><strong>What I made.</strong> Three social posts — one built on my own photograph of the mirror, two typographic pieces designed in Photoshop — and a pre-event email built in Mailchimp, with the photograph as the header, a call to action, and deliberate preview text. Two subject lines written for testing: one curiosity-led, one written to lower the barrier for people who would never read aloud.</p>
-
-        <p><strong>The thinking.</strong> One event, two audiences: people who might read, and people who would only ever watch. Every piece gives both a way in. The campaign also names the hardest part out loud — the stage sits at the back, so reading means walking past everyone — because the barrier shrinks once somebody says it.</p>
-
-        <div class="gallery">
-          <img src="whitegraph.jpg" alt="Social post: black background.">
-          <img src="email.PNG" alt="Pre-event email built in Mailchimp.">
-          <img src="blackgraph.jpg" alt="Social post: cream background.">
-        </div>
-      </article>
-
-    </section>
-
-    <section>
-      <h2>Mura — Releases</h2>
-
-      <p>Poetry written over three years and released as ten projects in English, Russian and Chechen. Every cover and campaign asset designed by me in Photoshop and PicsArt.</p>
-
-      <div class="releases">
-
-        <div class="release">
-          <img src="enough.jpg" alt="Cover artwork for enough">
-          <div class="name">enough</div>
-          <div class="kind">Album</div>
-        </div>
-
-        <div class="release">
-          <img src="spasi.jpg" alt="Cover artwork for Спаси меня">
-          <div class="name">Спаси меня</div>
-          <div class="kind">Album</div>
-        </div>
-
-        <div class="release">
-          <img src="haram.jpg" alt="Cover artwork for HARAM">
-          <div class="name">HARAM</div>
-          <div class="kind">Album</div>
-        </div>
-
-        <div class="release">
-          <img src="haramrus.jpg" alt="Cover artwork for Харам">
-          <div class="name">Харам</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="victim.jpg" alt="Cover artwork for The Villain In A Victim's Skin">
-          <div class="name">The Villain In A Victim's Skin</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="victimrus.jpg" alt="Cover artwork for Зашел в обличии жертвы">
-          <div class="name">Злодей в обличии жертвы</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="papa.jpg" alt="Cover artwork for Papa, optimistique me!">
-          <div class="name">Papa, optimistique me!</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="paparus.jpg" alt="Cover artwork for Папа, развесели меня!">
-          <div class="name">Папа, развесели меня!</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="bezam.jpg" alt="Cover artwork for Шийла безам">
-          <div class="name">Шийла безам</div>
-          <div class="kind">Single</div>
-        </div>
-
-        <div class="release">
-          <img src="iwantto.jpg" alt="Cover artwork for I want to...">
-          <div class="name">I want to...</div>
-          <div class="kind">Single</div>
-        </div>
-
-      </div>
-      <p><a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC">Listen on Spotify →</a></p>
-    </section>
-
-    <section>
-      <h2>About</h2>
-
-      <p>I trained as a journalist and spent my early career writing on deadline, a monthly column for a nationally distributed magazine, and press communications for a regional government administration where accuracy was not negotiable and nothing I published was ever corrected.</p>
-
-      <p>Since moving to Canada I have worked in client services translating dense policy into language people can actually use, completed a Computer Programming diploma, and built an independent creative project from nothing. That combination is the point: I can write the piece, publish it, read the numbers afterwards, and fix the template when it breaks.</p>
-
-      <p>I work in English, Russian and Chechen. I also write poetry, which is where the editorial instinct started.</p>
-    </section>
-
-    <footer>
-      <div class="social">
-        <a href="https://www.instagram.com/mura_alimov/" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
-            <circle cx="12" cy="12" r="4.2"/>
-            <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-
-        <a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC" aria-label="Spotify">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <circle cx="12" cy="12" r="9.5"/>
-            <path d="M7 8.8c3.6-1 7.6-.5 10 1.1"/>
-            <path d="M7.6 12.3c3-.8 6.4-.4 8.5 1"/>
-            <path d="M8.2 15.6c2.4-.6 5-.3 6.7.8"/>
-          </svg>
-        </a>
-
-        <a href="https://linkedin.com/in/muradalimov" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="4"/>
-            <path d="M7.3 10.4v7"/>
-            <path d="M7.3 7.2v.02"/>
-            <path d="M11.6 17.4v-4a2.6 2.6 0 0 1 5.2 0v4"/>
-          </svg>
-        </a>
-      </div>
-
-      <p>Toronto, ON</p>
-    </footer>
-
-    </body>
-    </html>
     <div class="gallery">
-      <img src="whitegraph.jpg" alt="Social post: black background.">
-      <img src="email.PNG" alt="Pre-event email built in Mailchimp.">
-      <img src="blackgraph.jpg" alt="Social post: cream background.">
+      <img src="blackgraph.jpg" alt="Social post: black background, white text reading 'The stage is at the back of the room'.">
+      <img src="whitegraph.jpg" alt="Social post: cream background, red text reading 'Nobody here is competing with you'.">
+      <img src="email.PNG" alt="Pre-event email built in Mailchimp, with the mirror photograph as header and a red call-to-action button.">
     </div>
   </article>
 
@@ -586,77 +244,88 @@
   <div class="releases">
 
     <div class="release">
-      <a href="https://open.spotify.com/album/6vggC11LGwtuaY8n9AwaL5?si=nH0M8S7VRLGWdj0ZYlrMEQ"></a>
-      <img src="enough.jpg" alt="Cover artwork for enough">
-      <div class="name">enough</div>
-      <div class="kind">Album</div>
+      <a href="https://open.spotify.com/album/6vggC11LGwtuaY8n9AwaL5" target="_blank" rel="noopener">
+        <img src="enough.jpg" alt="Cover artwork for enough">
+        <div class="name">enough</div>
+        <div class="kind">Album</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/album/3yrB5NGker0ZY7q8tfLbma?si=W3mDXzIzT9iSexzQ8aP47A"></a>
-      <img src="spasi.jpg" alt="Cover artwork for Спаси меня">
-      <div class="name">Спаси меня</div>
-      <div class="kind">Album</div>
+      <a href="https://open.spotify.com/album/3yrB5NGker0ZY7q8tfLbma" target="_blank" rel="noopener">
+        <img src="spasi.jpg" alt="Cover artwork for Спаси меня">
+        <div class="name">Спаси меня</div>
+        <div class="kind">Album</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/album/75UCxhEyjTD2s12qVClQBU?si=BKKHH0KQQ1G9mxWbMNx15g"></a>
-      <img src="haram.jpg" alt="Cover artwork for HARAM">
-      <div class="name">HARAM</div>
-      <div class="kind">Album</div>
+      <a href="https://open.spotify.com/album/75UCxhEyjTD2s12qVClQBU" target="_blank" rel="noopener">
+        <img src="haram.jpg" alt="Cover artwork for HARAM">
+        <div class="name">HARAM</div>
+        <div class="kind">Album</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/5gw6FECAuGb4VZBl6w4rN5?si=d2bf980907114403"></a>
-      <img src="haramrus.jpg" alt="Cover artwork for Харам">
-      <div class="name">Харам</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/5gw6FECAuGb4VZBl6w4rN5" target="_blank" rel="noopener">
+        <img src="haramrus.jpg" alt="Cover artwork for Харам">
+        <div class="name">Харам</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/4t0ugNQEo8fivDKvg3XB6n?si=fb03ac4659a347b4"></a>
-      <img src="victim.jpg" alt="Cover artwork for The Villain In A Victim's Skin">
-      <div class="name">The Villain In A Victim's Skin</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/4t0ugNQEo8fivDKvg3XB6n" target="_blank" rel="noopener">
+        <img src="victim.jpg" alt="Cover artwork for The Villain In A Victim's Skin">
+        <div class="name">The Villain In A Victim's Skin</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/0jlJdDH1gRBDp2KJbeB4CT?si=b8001a8e0a6442dc"></a>
-      <img src="victimrus.jpg" alt="Cover artwork for Зашел в обличии жертвы">
-      <div class="name">Злодей в обличии жертвы</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/0jlJdDH1gRBDp2KJbeB4CT" target="_blank" rel="noopener">
+        <img src="victimrus.jpg" alt="Cover artwork for Злодей в обличии жертвы">
+        <div class="name">Злодей в обличии жертвы</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/7aUThX2BVdQ2Gsid4sx0JG?si=2af68d41a1914170"></a>
-      <img src="papa.jpg" alt="Cover artwork for Papa, optimistique me!">
-      <div class="name">Papa, optimistique me!</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/7aUThX2BVdQ2Gsid4sx0JG" target="_blank" rel="noopener">
+        <img src="papa.jpg" alt="Cover artwork for Papa, optimistique me!">
+        <div class="name">Papa, optimistique me!</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/5LAa2AdstBlP9cJ7zekd6z?si=096ebebd38404cf7"></a>
-      <img src="paparus.jpg" alt="Cover artwork for Папа, развесели меня!">
-      <div class="name">Папа, развесели меня!</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/5LAa2AdstBlP9cJ7zekd6z" target="_blank" rel="noopener">
+        <img src="paparus.jpg" alt="Cover artwork for Папа, развесели меня!">
+        <div class="name">Папа, развесели меня!</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/57ILT1KeMDd6luMLMOgRhY?si=a0ebc85240bc4f75"></a>
-      <img src="bezam.jpg" alt="Cover artwork for Шийла безам">
-      <div class="name">Шийла безам</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/57ILT1KeMDd6luMLMOgRhY" target="_blank" rel="noopener">
+        <img src="bezam.jpg" alt="Cover artwork for Шийла безам">
+        <div class="name">Шийла безам</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
     <div class="release">
-      <a href="https://open.spotify.com/track/3Y6ko02PhWF8WLaF2kp06r?si=284289cc824a4838"></a>
-      <img src="iwantto.jpg" alt="Cover artwork for I want to...">
-      <div class="name">I want to...</div>
-      <div class="kind">Single</div>
+      <a href="https://open.spotify.com/track/3Y6ko02PhWF8WLaF2kp06r" target="_blank" rel="noopener">
+        <img src="iwantto.jpg" alt="Cover artwork for I want to...">
+        <div class="name">I want to...</div>
+        <div class="kind">Single</div>
+      </a>
     </div>
 
   </div>
-  <p><a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC">Listen on Spotify →</a></p>
+
+  <p><a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC" target="_blank" rel="noopener">Listen on Spotify →</a></p>
 </section>
 
 <section>
@@ -671,7 +340,7 @@
 
 <footer>
   <div class="social">
-    <a href="https://www.instagram.com/mura_alimov/" aria-label="Instagram">
+    <a href="https://www.instagram.com/mura_alimov/" target="_blank" rel="noopener" aria-label="Instagram">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
         <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
         <circle cx="12" cy="12" r="4.2"/>
@@ -679,7 +348,7 @@
       </svg>
     </a>
 
-    <a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC" aria-label="Spotify">
+    <a href="https://open.spotify.com/artist/6c36g90bbH4sgU74HknbjC" target="_blank" rel="noopener" aria-label="Spotify">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
         <circle cx="12" cy="12" r="9.5"/>
         <path d="M7 8.8c3.6-1 7.6-.5 10 1.1"/>
@@ -688,7 +357,7 @@
       </svg>
     </a>
 
-    <a href="https://linkedin.com/in/muradalimov" aria-label="LinkedIn">
+    <a href="https://linkedin.com/in/muradalimov" target="_blank" rel="noopener" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
         <rect x="2.5" y="2.5" width="19" height="19" rx="4"/>
         <path d="M7.3 10.4v7"/>
